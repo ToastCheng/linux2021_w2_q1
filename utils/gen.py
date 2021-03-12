@@ -20,8 +20,8 @@ if __name__ == "__main__":
     with open("data/fake_name.yaml", "rb") as f:
         fake_names = load(f, Loader=Loader)
 
-    with open("data/person.txt", "w+") as f:
-        for i in range(10):
+    with open("data/person_big.txt", "w+") as f:
+        for i in range(100000):
             f.write(
                 "%s %s %d %d %d\n" % 
                 (get_fake_last(fake_names), 
